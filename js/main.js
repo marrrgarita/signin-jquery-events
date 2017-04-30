@@ -12,7 +12,8 @@ $(document).ready(function() {
     $('.modal').fadeOut();
   })
 
-  $('.submit').on('click', function(){
+  $('.submit').on('click', function(e){
+    e.stopPropagation();
     $('input').addClass('error');
   })
 
